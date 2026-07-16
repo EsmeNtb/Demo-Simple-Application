@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Artistic Creations</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+
+            <a href="index.html" class="nav-brand">
+                My Portfolio
+            </a>
+
+            <ul class="nav-menu">
+                <li>
+                    <a href="index.html#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="index.html#about">About</a>
+                </li>
+
+                <li>
+                    <a href="creations.html">Creations</a>
+                </li>
+
+                <li>
+                    <a href="events.html">My Schedule</a>
+                </li>
+
+                <li>
+                    <a href="index.html#education">Education</a>
+                </li>
+
+                <li>
+                    <a href="index.html#hackathons">Hackathons</a>
+                </li>
+
+                <li>
+                    <a href="index.html#contact">Contact</a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="creations-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    My Artistic Creations
+                </h1>
+
+                <p class="hero-subtitle">
+                    Games, assets, and commissioned art
+                </p>
+            </div>
+        </section>
+
+        <section class="creations-gallery">
+            <div class="container">
+
+                <h2 class="section-title">
+                    Gallery
+                </h2>
+
+                <div
+                    class="filter-bar"
+                    role="tablist"
+                    aria-label="Creation categories"
+                >
+
+                    <button
+                        type="button"
+                        class="filter-btn active"
+                        data-filter="all"
+                    >
+                        All
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter-btn"
+                        data-filter="games"
+                    >
+                        Games
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter-btn"
+                        data-filter="assets"
+                    >
+                        Assets
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter-btn"
+                        data-filter="commissions"
+                    >
+                        Art Commissions
+                    </button>
+
+                </div>
+
+                <div
+                    id="creations-grid"
+                    class="creations-grid"
+                ></div>
+
+                <p
+                    id="no-results"
+                    class="no-results"
+                    hidden
+                >
+                    No creations in this category yet.
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                &copy; 2026 Your Name. All rights reserved.
+            </p>
+
+            <p>
+                Built with HTML, CSS & JavaScript
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="creations.js"></script>
+
+</body>
+</html>
