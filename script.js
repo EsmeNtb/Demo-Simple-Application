@@ -21,23 +21,25 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // CTA Button Scroll to Contact
-document.addEventListener('DOMContentLoaded', function() {
-    const ctaButtons = document.querySelectorAll('.cta-button');
-    
-    ctaButtons.forEach(button => {
-        button.addEventListener('click', function() {
+document.addEventListener('DOMContentLoaded', function () {
+    const heroCTA = document.querySelector('.hero .cta-button');
+
+    if (heroCTA) {
+        heroCTA.addEventListener('click', function () {
             const contactSection = document.getElementById('contact');
+
             if (contactSection) {
-                contactSection.scrollIntoView({ behavior: 'smooth' });
+                contactSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
             }
         });
-    });
+    }
 });
 
 // Contact Form Handling
 document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.querySelector('.contact-form');
-    
+    const contactForm = document.getElementById('contact-form');    
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
